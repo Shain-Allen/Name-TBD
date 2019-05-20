@@ -195,32 +195,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5715967734664298142, guid: a68b64a64572ef446a4abd6f16b30f77,
-        type: 3}
-      propertyPath: levelController
-      value: 
-      objectReference: {fileID: 5401610132304639573}
-    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 129fb14457a4825419c2d0fd567b6f2f,
-        type: 3}
-    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5629259765452997262, guid: a68b64a64572ef446a4abd6f16b30f77,
         type: 3}
       propertyPath: m_SpriteTilingProperty.border.x
@@ -270,6 +244,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715967734664298142, guid: a68b64a64572ef446a4abd6f16b30f77,
+        type: 3}
+      propertyPath: levelController
+      value: 
+      objectReference: {fileID: 5401610132304639573}
+    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 129fb14457a4825419c2d0fd567b6f2f,
+        type: 3}
+    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490598771071948674, guid: a68b64a64572ef446a4abd6f16b30f77,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68b64a64572ef446a4abd6f16b30f77, type: 3}
@@ -440,11 +440,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3278341006395105525, guid: c6a0f6ba138b4c04090516f3fc53d0b2,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 3278341007904017538, guid: c6a0f6ba138b4c04090516f3fc53d0b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -479,6 +474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278341006395105525, guid: c6a0f6ba138b4c04090516f3fc53d0b2,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}

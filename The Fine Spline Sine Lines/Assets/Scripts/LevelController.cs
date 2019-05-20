@@ -139,10 +139,12 @@ public class LevelController : MonoBehaviour
         if (yWave == yWaveF) return;
 
         progT += Time.deltaTime;
-        if (progT >= 1.0f)
+        if (progT >= 10.0f)
         {
             progT = 0.0f;
         }
+
+        Debug.Log(progT);
         
         AlignWave(ref xWave, ref xWaveF);
 
@@ -257,8 +259,7 @@ public class LevelController : MonoBehaviour
         ClampWave(ref xWaveF);
         ClampWave(ref yWaveF);
 
-        EraseWaves();
-        CreateWaves();
+        AlignWaves();
 
         if (Input.GetKeyDown(KeyCode.P))
         {

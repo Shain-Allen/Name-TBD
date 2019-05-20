@@ -74,7 +74,7 @@ public class PickupController : MonoBehaviour
     {
         DotController dC = GameObject.Find("Dot").GetComponent<DotController>();
 
-        dC.xIndex = Random.Range(0, 9);
+        dC.xIndex = Random.Range(0, levelController.GetComponent<LevelController>().);
         dC.yIndex = Random.Range(0, 9);
     }
 
