@@ -18,6 +18,8 @@ public class LevelController : MonoBehaviour
 
     public bool hasCollectible = false;
 
+    public float time = 0.0f;
+
     public float[] xWave;
 
     public float[] xWaveF;
@@ -37,6 +39,8 @@ public class LevelController : MonoBehaviour
     public float debugScrollMult = 0.25f;
 
     private bool debug = false;
+
+    private bool hasMoved = false;
 
     [Header("Borders")]
 
@@ -258,6 +262,8 @@ public class LevelController : MonoBehaviour
         ClampWave(ref yWave);
         ClampWave(ref xWaveF);
         ClampWave(ref yWaveF);
+
+        //dot.GetComponent<Transform>().position )
 
         AlignWaves();
 

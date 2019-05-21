@@ -12,17 +12,21 @@ public class LevelManager : MonoBehaviour
 
     public bool[] Collectibles;
 
+    public float[] Times;
+
     // Start is called before the first frame update
     void Start()
     {
         Collectibles = new bool[Levels.Length];
+
+        Times = new float[Levels.Length];
 
         LoadLevel(0);
     }
 
     public void SaveLevel()
     {
-        Collectibles[currentLevel] = Levels[currentLevel].GetComponent<LevelController>().hasCollectible;
+        Collectibles[currentLevel] = Level.GetComponent<LevelController>().hasCollectible;
     }
 
     public void DestroyLevel()
@@ -54,10 +58,14 @@ public class LevelManager : MonoBehaviour
     {
         SaveLevel();
 
-        if (currentLevel < Levels.Length-1)
+        if (currentLevel < Levels.Length - 1)
         {
             currentLevel++;
             LoadLevel(currentLevel);
+        }
+        else
+        {
+            LoadLevel(0);
         }
     }
     
