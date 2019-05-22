@@ -256,16 +256,14 @@ public class LevelController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        //if (progT >= 1000.0f) progT = 0.0f;
+
         ClampWave(ref xWave);
         ClampWave(ref yWave);
         ClampWave(ref xWaveF);
         ClampWave(ref yWaveF);
 
-        Transform t = dot.GetComponent<Transform>();
-
-        if (!hasMoved && !Mathf.Approximately(t.position.x, dot.GetComponent<DotController>().respawnPos.x) && !Mathf.Approximately(t.position.y, dot.GetComponent<DotController>().respawnPos.y)) hasMoved = true;
-
-        if (hasMoved) time += Time.deltaTime;
+        //dot.GetComponent<Transform>().position )
 
         AlignWaves();
 

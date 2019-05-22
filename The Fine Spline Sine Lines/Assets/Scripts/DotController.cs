@@ -39,11 +39,11 @@ public class DotController : MonoBehaviour
             --yIndex;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && xIndex < lc.xWave.Length)
+        if (Input.GetKeyDown(KeyCode.D) && xIndex < lc.xWave.Length)
         {
             ++xIndex;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) && xIndex > 1)
+        else if (Input.GetKeyDown(KeyCode.A) && xIndex > 1)
         {
             --xIndex;
         }
