@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668391162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.14, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -217,10 +217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Levels:
-  - {fileID: 3278341007547291393, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
-  - {fileID: 3484437574279085989, guid: 7070077d3400a7d46ac46abef95c14fa, type: 3}
-  - {fileID: 2173468318384660964, guid: a2df9c35eee28274581fb0a6b81ea5dc, type: 3}
-  - {fileID: 5401610132304639573, guid: 6b60498b443df284495c5affd4e331df, type: 3}
+  - {fileID: 8159745256272746849, guid: a2b1f3e859103bd47abde21b6dd29e15, type: 3}
+  - {fileID: 5101547182377215435, guid: b59bb0ea229399643b213a80129b0862, type: 3}
   Level: {fileID: 0}
   currentLevel: 0
   Collectibles: 

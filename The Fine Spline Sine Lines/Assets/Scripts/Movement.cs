@@ -9,6 +9,18 @@ public class Movement : MonoBehaviour
 
     public GameObject change;
 
+    public GameObject goal;
+
+    public GameObject collectible;
+
+    public Transform prefTransform;
+
+    public Transform changeTransform;
+
+    public Transform goalTransform;
+
+    public Transform collectTransform;
+
     [Header("Directions")]
 
     public Vector3 preferedDirection = Vector3.zero;
@@ -35,31 +47,31 @@ public class Movement : MonoBehaviour
 
     public float changeTime = 1.0f;
     
-
     [Header("Hidden")]
     private float timer = 0.0f;
 
     private float t = 0.0f;
 
-    public string str = "";
-
     public bool isMoving = false;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        collectible = GameObject.Find("Collectible");
+        collectTransform = collectible.GetComponent<Transform>();
+    }
+
     void Update()
     {
-        timer += Time.deltaTime;
+        goal = GameObject.Find("Goal");
+
+        prefTransform = prefered.GetComponent<Transform>();
+        changeTransform = change.GetComponent<Transform>();
+
+        goalTransform = goal.GetComponent<Transform>();
         
 
         if (t >= 1.0f) t = 1.0f;
         else t += Time.deltaTime * tSpeed;
-        
-        if (timer >= changeTime)
-        {
-            timer = 0.0f;
-            randomChangeDirection = new Vector3(Random.Range(rangeRandChangeDir.x, rangeRandChangeDir.y), Random.Range(rangeRandChangeDir.x, rangeRandChangeDir.y), 0.0f);
-            preferedDirection += randomChangeDirection;
-        }
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -96,6 +108,15 @@ public class Movement : MonoBehaviour
             change.SetActive(true);
 
             isMoving = true;
+        }
+
+        if (Mathf.Approximately(preferedDirection.x, Vector3.zero.x) && Mathf.Approximately(preferedDirection.y, Vector3.zero.y))
+        {
+            prefered.SetActive(false);
+        }
+        else
+        {
+            prefered.SetActive(true);
         }
 
         preferedDirection = new Vector3(Mathf.Clamp(preferedDirection.x, rangeprefDir.x, rangeprefDir.y), Mathf.Clamp(preferedDirection.y, rangeprefDir.x, rangeprefDir.y), 0.0f);

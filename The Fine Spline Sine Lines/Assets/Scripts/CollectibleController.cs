@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class CollectibleController : MonoBehaviour
 {
-    public LevelController levelController;
+    public LevelManager levelManager;
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name != "Dot") return;
+        if (collider.gameObject.name != "Player") return;
 
-        levelController = GameObject.FindWithTag("Level").GetComponent<LevelController>();
+        levelManager = GameObject.Find("Camera").GetComponent<LevelManager>();
+        
+        levelManager.Collectibles[levelManager.currentLevel] = true;
 
-        levelController.hasCollectible = true;
-
-        Debug.Log("Got");
         Destroy(gameObject);
     }
 }
