@@ -34,18 +34,36 @@ public class DotController : MonoBehaviour
         {
             ++yIndex;
         }
-        else if (Input.GetKeyDown(KeyCode.S) && yIndex > 1)
+        else if (Input.GetKeyDown(KeyCode.W) && yIndex >= lc.yWave.Length)
+        {
+            yIndex = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) && yIndex > 1)
         {
             --yIndex;
+        }
+        else if (Input.GetKeyDown(KeyCode.S) && yIndex <= 1)
+        {
+            yIndex = lc.yWave.Length;
         }
 
         if (Input.GetKeyDown(KeyCode.D) && xIndex < lc.xWave.Length)
         {
             ++xIndex;
         }
-        else if (Input.GetKeyDown(KeyCode.A) && xIndex > 1)
+        if (Input.GetKeyDown(KeyCode.D) && xIndex >= lc.xWave.Length)
+        {
+            xIndex = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.A) && xIndex > 1)
         {
             --xIndex;
+        }
+        else if (Input.GetKeyDown(KeyCode.A) && xIndex <= 1)
+        {
+            xIndex = lc.xWave.Length;
         }
 
         if (xIndex > 0 && xIndex < lc.xWave.Length)

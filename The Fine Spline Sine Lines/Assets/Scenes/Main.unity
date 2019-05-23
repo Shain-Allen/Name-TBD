@@ -224,3 +224,4 @@ MonoBehaviour:
   Level: {fileID: 0}
   currentLevel: 0
   Collectibles: 
+  Times: []

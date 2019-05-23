@@ -204,7 +204,7 @@ public class LevelController : MonoBehaviour
     {
         levelHeight = yWave.Length;
         levelWidth = xWave.Length;
-
+        /*
         xBackground = Instantiate(prefabBackground, new Vector3((levelHeight / 2 + levelPadding) * -1, 0.0f, 0.1f), gameObject.GetComponent<Transform>().rotation);
         xBackground.GetComponent<Transform>().localScale = new Vector3(3.5f, levelWidth + (levelWidth / 2) * 0.85f, 1.0f);
 
@@ -237,12 +237,12 @@ public class LevelController : MonoBehaviour
 
         xLines = new GameObject[xWave.Length-1];
         yLines = new GameObject[yWave.Length-1];
-
+        */
         xWaveF = xWave;
         yWaveF = yWave;
 
         AdjustLevel();
-        CreateWaves();
+        //CreateWaves();
     }
 
     void ClampWave(ref float[] wave)
@@ -265,7 +265,7 @@ public class LevelController : MonoBehaviour
 
         //dot.GetComponent<Transform>().position )
 
-        AlignWaves();
+        //AlignWaves();
 
         if (Input.GetKeyDown(KeyCode.P))
         {
