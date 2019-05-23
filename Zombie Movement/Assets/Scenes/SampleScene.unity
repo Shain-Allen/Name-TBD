@@ -619,13 +619,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefered: {fileID: 1950577060}
   change: {fileID: 1533624512}
-  preferedDirection: {x: 0, y: 0, z: 0}
+  preferedDirection: {x: 0, y: 1, z: 0}
   changeDirection: {x: 0, y: 0, z: 0}
   randomChangeDirection: {x: 0, y: 0, z: 0}
-  speed: 20
+  rangeRandChangeDir: {x: -1, y: 1}
+  rangeChangeDir: {x: -1.5, y: 1.5}
+  rangeprefDir: {x: -1, y: 1}
+  speed: 30
   tSpeed: 0.5
   changeAmount: 0.5
   changeTime: 1
+  str: 
+  isMoving: 0
 --- !u!50 &1562750002
 Rigidbody2D:
   serializedVersion: 4
