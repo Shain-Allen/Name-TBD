@@ -4,36 +4,37 @@ using UnityEngine;
 
 public class AttractController : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject[] attracts;
 
     private new Transform transform;
 
     private Movement movement;
 
-    public float multiplier;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = GameObject.Find("Player");
-    }
+    public float distMult = 2.0f;
 
     // Update is called once per frame
     void Update()
     {
-        movement = player.GetComponent<Movement>();
-        transform = player.GetComponent<Transform>();
+        movement = gameObject.GetComponent<Movement>();
+        transform = gameObject.GetComponent<Transform>();
+        Vector3 direction = Vector3.zero;
 
-        float distanceX = transform.position.x - gameObject.GetComponent<Transform>().position.x;
-        float distanceY = transform.position.y - gameObject.GetComponent<Transform>().position.y;
+        attracts = GameObject.FindGameObjectsWithTag("Reset");
 
-        if (distanceX < distanceY)
+        foreach (GameObject obj in attracts)
         {
-            //add x to preferedDirection's x * 1 / distance
+            if (obj.name.Contains("Reset"))
+            {
+                direction += (obj.GetComponent<Transform>().position - transform.position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * distMult);
+            }
+            else
+            {
+                direction += (transform.position - obj.GetComponent<Transform>().position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position));
+            }
         }
-        else
-        {
-            //add y to preferedDirection's y * 1 / distance
-        }
+
+
+
+        movement.preferedDirection = direction;
     }
 }

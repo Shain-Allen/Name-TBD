@@ -15,12 +15,12 @@ PrefabInstance:
     - target: {fileID: 3278341007547291647, guid: c6a0f6ba138b4c04090516f3fc53d0b2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.051784128
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3278341007547291647, guid: c6a0f6ba138b4c04090516f3fc53d0b2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18124431
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3278341007547291647, guid: c6a0f6ba138b4c04090516f3fc53d0b2,
         type: 3}
@@ -82,6 +82,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 234177344, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
+      propertyPath: m_TagString
+      value: Reset
+      objectReference: {fileID: 0}
+    - target: {fileID: 995516857, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
+      propertyPath: m_TagString
+      value: Reset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049595273, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
+      propertyPath: m_TagString
+      value: Reset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264946616, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
+      propertyPath: m_TagString
+      value: Reset
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
 --- !u!4 &5101547182377215285 stripped
@@ -99,6 +115,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1958492779832904, guid: 957fd077dfb3c7641b5d2325c0138c35, type: 3}
       propertyPath: m_Name
+      value: Reset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958492779832904, guid: 957fd077dfb3c7641b5d2325c0138c35, type: 3}
+      propertyPath: m_TagString
       value: Reset
       objectReference: {fileID: 0}
     - target: {fileID: 4294772316465120, guid: 957fd077dfb3c7641b5d2325c0138c35, type: 3}
