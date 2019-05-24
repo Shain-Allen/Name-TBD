@@ -177,6 +177,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefered: {fileID: 7033593428889787334}
   change: {fileID: 2516966615987219395}
+  goal: {fileID: 0}
+  collectible: {fileID: 0}
+  prefTransform: {fileID: 0}
+  changeTransform: {fileID: 0}
+  goalTransform: {fileID: 0}
+  collectTransform: {fileID: 0}
   preferedDirection: {x: 0, y: 0, z: 0}
   changeDirection: {x: 0, y: 0, z: 0}
   randomChangeDirection: {x: 0, y: 0, z: 0}
@@ -187,7 +193,6 @@ MonoBehaviour:
   tSpeed: 0.5
   changeAmount: 0.5
   changeTime: 1
-  str: 
   isMoving: 0
 --- !u!50 &4708550806087979796
 Rigidbody2D:
