@@ -1,0 +1,17 @@
+Make sure your file names match the ones in the spreadsheet :)
+
+Reference:
+
+ART_char_U	Character Ani (Up)	Fadiya	Art			5/24
+ART_char_D	Character Ani (Down)	Fadiya	Art			5/24
+ART_char_L	Character Ani (Left)	Fadiya	Art			5/24
+ART_char_R	Character Ani (Right)	Fadiya	Art			5/24
+ART_villain	Villain Ani	        Fadiya	Art			5/24
+ART_bkg	        Background Dirt	        Olivia	Art			5/24
+ART_gb_tile	Grave Beds (Tile)	Olivia	Art			5/24
+ART_inv_PU	Inverse Pick Up   	Olivia	Art			5/24
+ART_smo_PU	Smoothing Pick Up	Olivia	Art			5/24
+ART_mix_PU	Mixer Pick Up	        Olivia	Art			5/24
+ART_shu_PU	Shuffler Pick Up	Olivia	Art			5/24
+ART_power	Power Up        	Olivia	Art			5/24
+ART_ex_gate	Exit Gate Sprite	Olivia	Art			5/24
