@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1574649421206496, guid: 51f84cb1f4067964693cbcff4a68b3ad, type: 3}
       propertyPath: m_Name
-      value: Mixer Pickup
+      value: Mixer Pickup Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4055281554641196, guid: 51f84cb1f4067964693cbcff4a68b3ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64,6 +64,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060705326768726, guid: 51f84cb1f4067964693cbcff4a68b3ad,
+        type: 3}
+      propertyPath: pickupNoise
+      value: event:/ItemNoises/Item Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 212950904920853322, guid: 51f84cb1f4067964693cbcff4a68b3ad,
         type: 3}

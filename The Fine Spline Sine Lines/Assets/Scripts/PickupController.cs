@@ -5,9 +5,9 @@ using UnityEngine;
 public class PickupController : MonoBehaviour
 {
     [FMODUnity.EventRef]
-    public string PickupNoise;
+    public string pickupNoise;
 
-    FMODStudio.EventInstance PlayPickupSound;
+    FMOD.Studio.EventInstance PlayPickupSound;
 
 
 	// Use this for initialization
@@ -21,13 +21,13 @@ public class PickupController : MonoBehaviour
     {
         if (collider2D.name != "Player") return;
 
-        PlayPickupSound.start();
+        PlayPickupSound.start ();
         Destroy(gameObject);
 	}
 
     void awake()
     {
-        PlayPickupSound = FMODUnity.RuntimeManager.CreateInstance(PickupNoise);
+        PlayPickupSound = FMODUnity.RuntimeManager.CreateInstance ("event:/ItemNoises/Item Pickup");
     }
 
 }
