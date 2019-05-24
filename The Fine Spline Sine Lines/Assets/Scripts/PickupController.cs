@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PickupController : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string PickupNoise;
 
     FMODStudio.EventInstance PlayPickupSound;
 
-    [FMODUnity.EventRef]
-    public string PickupNoise;
 
 	// Use this for initialization
 	void Start ()
