@@ -29,7 +29,7 @@ public class AttractController : MonoBehaviour
 
             if (obj.name.Contains("Reset"))
             {
-                direction += (transform.position - obj.GetComponent<Transform>().position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * distMult);
+                direction += (obj.GetComponent<Transform>().position - transform.position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * distMult);
             }
             else
             {
