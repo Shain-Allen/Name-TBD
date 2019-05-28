@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 212950904920853322}
   - component: {fileID: 61130835783245382}
   - component: {fileID: 114060705326768726}
+  - component: {fileID: 3116566026359389162}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -119,4 +120,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64497a965663ee4d840969c4817667f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupNoise: event:/ItemNoises/Item Pickup
+  amount: {x: 0.1, y: 0.1}
+--- !u!114 &3116566026359389162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574649421206496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12622e2f1ef74c843b34ccbed4677d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []

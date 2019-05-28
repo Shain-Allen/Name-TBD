@@ -4,30 +4,14 @@ using UnityEngine;
 
 public class PickupController : MonoBehaviour
 {
-    [FMODUnity.EventRef]
-    public string pickupNoise;
-
-    FMOD.Studio.EventInstance PlayPickupSound;
-
-
-	// Use this for initialization
-	void Start ()
-    {
-        
-	}
+    public Vector2 amount = Vector2.zero;
 	
-	// Update is called once per frame
 	void OnTriggerEnter2D (Collider2D collider2D)
     {
         if (collider2D.name != "Player") return;
 
-        PlayPickupSound.start ();
+        collider2D.GetComponent<Movement>().rangeChangeDir -= amount;
+
         Destroy(gameObject);
 	}
-
-    void awake()
-    {
-        PlayPickupSound = FMODUnity.RuntimeManager.CreateInstance ("event:/ItemNoises/Item Pickup");
-    }
-
 }

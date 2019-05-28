@@ -27,7 +27,7 @@ public class CollectibleController : MonoBehaviour
         Debug.Log("heck");
 
         levelManager = GameObject.Find("Camera").GetComponent<LevelManager>();
-        
+
         levelManager.Collectibles[levelManager.currentLevel] = true;
 
         Destroy(gameObject);
