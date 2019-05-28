@@ -25,9 +25,11 @@ public class AttractController : MonoBehaviour
 
         foreach (GameObject obj in attracts)
         {
+
+
             if (obj.name.Contains("Reset"))
             {
-                direction += (obj.GetComponent<Transform>().position - transform.position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * distMult);
+                direction += (transform.position - obj.GetComponent<Transform>().position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * distMult);
             }
             else
             {
