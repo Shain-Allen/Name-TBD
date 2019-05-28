@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 212344611028543682}
   - component: {fileID: 114764752303577732}
   - component: {fileID: 61100716881218354}
+  - component: {fileID: 1068561195369494843}
   - component: {fileID: 8138144986594004391}
+  - component: {fileID: 9050255719562989661}
   m_Layer: 0
   m_Name: Reset
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958492779832904}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.49, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -120,6 +122,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1068561195369494843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958492779832904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b43b813be14d704382bf01071462fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximity: 5
 --- !u!114 &8138144986594004391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,3 +150,17 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: ae950d4c8d20ad74fbe454b5ffa629c7, type: 3}
   - {fileID: 21300000, guid: 73b7f054da6ce6740a91f3389eb99b34, type: 3}
+--- !u!114 &9050255719562989661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958492779832904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4917e8398ccb5b44a0114f681fb67ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: 1.5
+  min: 0.75

@@ -19,8 +19,6 @@ public class Movement : MonoBehaviour
 
     public Transform goalTransform;
 
-    public Transform collectTransform;
-
     [Header("Directions")]
 
     public Vector3 preferedDirection = Vector3.zero;
@@ -44,16 +42,8 @@ public class Movement : MonoBehaviour
     [Header("Hidden")]
     private float timer = 0.0f;
 
-    private float tX = 0.0f;
-    private float tY = 0.0f;
-
     public bool isMoving = false;
-
-    private void Start()
-    {
-        collectible = GameObject.Find("Collectible");
-        collectTransform = collectible.GetComponent<Transform>();
-    }
+    
 
     void Update()
     {
@@ -86,7 +76,7 @@ public class Movement : MonoBehaviour
             prefered.SetActive(true);
         }
 
-        preferedDirection = new Vector3(Mathf.Clamp(preferedDirection.x, rangeprefDir.x, rangeprefDir.y), Mathf.Clamp(preferedDirection.y, rangeprefDir.x, rangeprefDir.y), 0.0f);
+        preferedDirection = preferedDirection.normalized;
 
         gameObject.GetComponent<Rigidbody2D>().velocity = (changeDirection + preferedDirection) * speed * Time.deltaTime;
 
