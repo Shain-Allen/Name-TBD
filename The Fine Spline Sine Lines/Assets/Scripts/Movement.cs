@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
     public Vector3 changeDirection = Vector3.zero;
 
     [Header("Ranges")]
-    
+
     public Vector2 rangeChangeDir = Vector2.zero;
 
     public Vector2 rangeprefDir = Vector2.zero;
@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
     public float changeAmount = 0.1f;
 
     public float changeTime = 1.0f;
-    
+
     [Header("Hidden")]
     private float timer = 0.0f;
 
@@ -51,10 +51,16 @@ public class Movement : MonoBehaviour
 
     public bool isMoving = false;
 
+    [FMODUnity.EventRef]
+    public string footsteps;
+    private float movementSpeed;
+
     private void Start()
     {
         collectible = GameObject.Find("Collectible");
         collectTransform = collectible.GetComponent<Transform>();
+
+        InvokeRepeating("CallFootsteps", 0, movementSpeed);
     }
 
     void Update()
@@ -65,7 +71,7 @@ public class Movement : MonoBehaviour
         changeTransform = change.GetComponent<Transform>();
 
         goalTransform = goal.GetComponent<Transform>();
-        
+
 
         if (tX >= 1.0f) tX = 1.0f;
         else tX += Time.deltaTime * tSpeed;
@@ -138,5 +144,17 @@ public class Movement : MonoBehaviour
         prefered.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, preferedAngle);
 
         change.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, changeAngle);
+
+        Rigidbody2D MyRigibody = gameObject.GetComponent<Rigidbody2D>();
+
+        movementSpeed = Mathf.Abs((MyRigibody.velocity.x + MyRigibody.velocity.y) / 2.0f);
+    }
+
+    void CallFootsteps()
+    {
+        if(isMoving)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(footsteps);
+        }
     }
 }
