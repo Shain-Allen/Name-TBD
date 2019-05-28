@@ -152,7 +152,7 @@ public class Movement : MonoBehaviour
 
     void CallFootsteps()
     {
-        if(isMoving)
+        if(isMoving == true)
         {
             FMODUnity.RuntimeManager.PlayOneShot(footsteps);
         }
