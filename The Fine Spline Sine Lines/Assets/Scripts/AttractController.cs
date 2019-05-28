@@ -4,41 +4,34 @@ using UnityEngine;
 
 public class AttractController : MonoBehaviour
 {
-    public GameObject[] attracts;
+    private Transform playerTransform;
 
-    private new Transform transform;
+    private GameObject player;
 
     private Movement movement;
 
-    public float distMult = 2.0f;
-
-    public float boundsMult = 0.1f;
+    public float proximity = 2.0f;
 
     // Update is called once per frame
     void Update()
     {
-        movement = gameObject.GetComponent<Movement>();
-        transform = gameObject.GetComponent<Transform>();
+        player = GameObject.Find("Player");
+        playerTransform = player.GetComponent<Transform>();
+        movement = player.GetComponent<Movement>();
         Vector3 direction = Vector3.zero;
 
-        attracts = GameObject.FindGameObjectsWithTag("Reset");
+        if (Vector3.Distance(transform.position, playerTransform.position) > proximity) return;
 
-        foreach (GameObject obj in attracts)
+        float xDistance = Mathf.Abs(transform.position.x - playerTransform.position.x);
+        float yDistance = Mathf.Abs(transform.position.y - playerTransform.position.y);
+
+        if (xDistance > yDistance)
         {
-
-
-            if (obj.name.Contains("Reset"))
-            {
-                direction += (obj.GetComponent<Transform>().position - transform.position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * distMult);
-            }
-            else
-            {
-                direction += (transform.position - obj.GetComponent<Transform>().position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * boundsMult);
-            }
+            movement.preferedDirection.x += movement.rangeprefDir.y / xDistance;
         }
-
-
-
-        movement.preferedDirection = direction;
+        else
+        {
+            movement.preferedDirection.y += movement.rangeprefDir.y / yDistance;
+        }
     }
 }
