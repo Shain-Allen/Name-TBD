@@ -1,0 +1,305 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114860747713493800}
+  - {fileID: 114641713503573852}
+  EditorEvents:
+  - {fileID: 114903845990361166}
+  - {fileID: 114295580326460116}
+  - {fileID: 114933263901816248}
+  - {fileID: 114886131384371076}
+  - {fileID: 114791382423407348}
+  - {fileID: 114292978298281270}
+  - {fileID: 114492465477567332}
+  - {fileID: 114415647794583786}
+  - {fileID: 114845902447188562}
+  - {fileID: 114202003877323284}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 114641713503573852}
+  StringsBanks:
+  - {fileID: 114860747713493800}
+  stringsBankWriteTime: 636942181091978543
+  cacheVersion: 3
+--- !u!114 &114202003877323284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/enemyNoises/ZombieDeath
+  m_EditorClassIdentifier: 
+  Path: event:/enemyNoises/ZombieDeath
+  guid: f6ff3ea6febb1948a1bf22d65d013004
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4884
+--- !u!114 &114292978298281270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/enemyNoises/SpoopyWhisperBreath
+  m_EditorClassIdentifier: 
+  Path: event:/enemyNoises/SpoopyWhisperBreath
+  guid: ac0c7826f4380949b4c4ea6eddb229bd
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
+--- !u!114 &114295580326460116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/environmental/DoorShut
+  m_EditorClassIdentifier: 
+  Path: event:/environmental/DoorShut
+  guid: 2b37e1afbe7fce4e9f46d3abd33436cd
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3631
+--- !u!114 &114415647794583786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/environmental/Scratching
+  m_EditorClassIdentifier: 
+  Path: event:/environmental/Scratching
+  guid: cf19762c2882fc4cb055ede7529e2545
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6112
+--- !u!114 &114492465477567332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/enemyNoises/FootSteps
+  m_EditorClassIdentifier: 
+  Path: event:/enemyNoises/FootSteps
+  guid: ceffc0583c3ef1438af47b29060f4c61
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &114641713503573852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\shain.allen\Desktop\Name-TBD\FMODJackalopes\Build\Desktop\Master.bank
+  SubDir: 
+  lastModified: 636942181091928495
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 933952
+  Exists: 1
+--- !u!114 &114791382423407348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ItemNoises/SNDPickup
+  m_EditorClassIdentifier: 
+  Path: event:/ItemNoises/SNDPickup
+  guid: 93b8ca77c84ab64b8d46fdd2c90f604d
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3426
+--- !u!114 &114845902447188562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/environmental/DoorOpenCreaky
+  m_EditorClassIdentifier: 
+  Path: event:/environmental/DoorOpenCreaky
+  guid: d0db74e443549049a046bd85a42febf5
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5537
+--- !u!114 &114860747713493800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\shain.allen\Desktop\Name-TBD\FMODJackalopes\Build\Desktop\Master.strings.bank
+  SubDir: 
+  lastModified: 636942181091978543
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1220
+  Exists: 1
+--- !u!114 &114886131384371076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/enemyNoises/ZombieGroan
+  m_EditorClassIdentifier: 
+  Path: event:/enemyNoises/ZombieGroan
+  guid: 6043548885a385498ae5b6d620cf6b17
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
+--- !u!114 &114903845990361166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/environmental/ScratchingTearing
+  m_EditorClassIdentifier: 
+  Path: event:/environmental/ScratchingTearing
+  guid: 137f429624f6a9469a1aef3b8706f892
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5537
+--- !u!114 &114933263901816248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/enemyNoises/Wghaaahhhh
+  m_EditorClassIdentifier: 
+  Path: event:/enemyNoises/Wghaaahhhh
+  guid: 34d23d22746a034ca61d0556b01ae36b
+  Banks:
+  - {fileID: 114641713503573852}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2664
