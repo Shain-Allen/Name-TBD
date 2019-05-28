@@ -25,8 +25,25 @@ MonoBehaviour:
   - {fileID: 114844797227153096}
   StringsBanks:
   - {fileID: 114995956420825298}
-  stringsBankWriteTime: 636943063771612453
+  stringsBankWriteTime: 636946434969851278
   cacheVersion: 3
+--- !u!114 &114153929483028528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/EnemyFootstepsSquish/EnemyIsMoving
+  m_EditorClassIdentifier: 
+  Name: EnemyIsMoving
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114223500278768548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +77,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114381063602473518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,11 +98,28 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114616166083757176}
+  - {fileID: 114384806514375398}
   MinDistance: 0
   MaxDistance: 0
   Length: 69000
 --- !u!114 &114384577681148296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114384806514375398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +156,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114376108160576006}
+  - {fileID: 114899141272977908}
   MinDistance: 0
   MaxDistance: 0
   Length: 5100
@@ -142,7 +176,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114616166083757176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +193,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114636792688830676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +282,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114508078513113542}
+  - {fileID: 114153929483028528}
   MinDistance: 0
   MaxDistance: 0
   Length: 2689
@@ -317,7 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\shain.allen\Desktop\Name-TBD\Fmod General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636943063771572419
+  lastModified: 636946434969841265
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -385,6 +419,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 348
+--- !u!114 &114899141272977908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Crunchy Footstep random/IsMoving
+  m_EditorClassIdentifier: 
+  Name: IsMoving
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114946606266842708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\shain.allen\Desktop\Name-TBD\Fmod General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636943063771612453
+  lastModified: 636946434969851278
   LoadResult: 0
   FileSizes:
   - Name: Desktop

@@ -12,7 +12,7 @@ public class CollectibleController : MonoBehaviour
     public LevelManager levelManager;
 
 
-    void awake()
+    void Awake()
     {
         PlayPickupSound = FMODUnity.RuntimeManager.CreateInstance(pickupNoise);
     }
