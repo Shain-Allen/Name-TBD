@@ -14,7 +14,7 @@ public class GoalController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name != "Dot") return;
+        if (collider.gameObject.name != "Player") return;
         LevelManager.LoadNextLevel();
         Destroy(gameObject);
     }
