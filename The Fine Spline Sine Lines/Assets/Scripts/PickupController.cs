@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class PickupController : MonoBehaviour
 {
-
-	// Use this for initialization
-	void Start ()
-    {
-        
-	}
+    public Vector2 amount = Vector2.zero;
 	
-	// Update is called once per frame
 	void OnTriggerEnter2D (Collider2D collider2D)
     {
         if (collider2D.name != "Player") return;
+
+        collider2D.GetComponent<Movement>().rangeChangeDir -= amount;
 
         Destroy(gameObject);
 	}

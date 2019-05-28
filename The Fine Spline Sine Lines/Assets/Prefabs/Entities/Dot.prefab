@@ -186,8 +186,6 @@ MonoBehaviour:
   collectTransform: {fileID: 0}
   preferedDirection: {x: 0, y: 0, z: 0}
   changeDirection: {x: 0, y: 0, z: 0}
-  randomChangeDirection: {x: 0, y: 0, z: 0}
-  rangeRandChangeDir: {x: -1, y: 1}
   rangeChangeDir: {x: -1.75, y: 1.75}
   rangeprefDir: {x: -1, y: 1}
   speed: 20
@@ -209,6 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attracts: []
   distMult: 1.3
+  boundsMult: 0.25
 --- !u!50 &4708550806087979796
 Rigidbody2D:
   serializedVersion: 4

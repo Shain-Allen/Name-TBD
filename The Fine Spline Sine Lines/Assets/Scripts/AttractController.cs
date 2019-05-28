@@ -12,6 +12,8 @@ public class AttractController : MonoBehaviour
 
     public float distMult = 2.0f;
 
+    public float boundsMult = 0.1f;
+
     // Update is called once per frame
     void Update()
     {
@@ -29,7 +31,7 @@ public class AttractController : MonoBehaviour
             }
             else
             {
-                direction += (transform.position - obj.GetComponent<Transform>().position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position));
+                direction += (transform.position - obj.GetComponent<Transform>().position) * (1.0f / Vector3.Distance(obj.GetComponent<Transform>().position, transform.position) * boundsMult);
             }
         }
 

@@ -27,12 +27,8 @@ public class Movement : MonoBehaviour
 
     public Vector3 changeDirection = Vector3.zero;
 
-    public Vector3 randomChangeDirection = Vector3.zero;
-
     [Header("Ranges")]
-
-    public Vector2 rangeRandChangeDir = Vector2.zero;
-
+    
     public Vector2 rangeChangeDir = Vector2.zero;
 
     public Vector2 rangeprefDir = Vector2.zero;
@@ -98,12 +94,12 @@ public class Movement : MonoBehaviour
             tX = 0.0f;
         }
 
-        if (!(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && !(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)))
+        if (!(Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftArrow)) && !(Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.RightArrow)))
         {
             changeDirection.x = Mathf.Lerp(changeDirection.x, 0.0f, tX);
         }
 
-        if (!(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && !(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)))
+        if (!(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.UpArrow)) && !(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.DownArrow)))
         {
             changeDirection.y = Mathf.Lerp(changeDirection.y, 0.0f, tY);
         }
