@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{159fa89a-e397-452b-b226-3f49bf27b71b}">
+		<property name="assetPath">
+			<value>Zombie Groan 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.4146938775510201</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d4fd3abd-6360-4bb0-b506-7e61a1358c53}</destination>
+		</relationship>
+	</object>
+</objects>
