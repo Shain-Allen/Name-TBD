@@ -12,10 +12,186 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 114395591802428946}
+  - {fileID: 114885576325473696}
+  EditorEvents:
+  - {fileID: 114473488182843874}
+  - {fileID: 114104465806636404}
+  - {fileID: 114265744821998822}
+  - {fileID: 114090171705616388}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  MasterBanks:
+  - {fileID: 114885576325473696}
+  StringsBanks:
+  - {fileID: 114395591802428946}
+  stringsBankWriteTime: 636947314168865792
   cacheVersion: 3
+--- !u!114 &114090171705616388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Movement/EnemyFootstepsSquish
+  m_EditorClassIdentifier: 
+  Path: event:/Movement/EnemyFootstepsSquish
+  guid: 6d7915908bec1d4c905963b7204f6f6b
+  Banks:
+  - {fileID: 114885576325473696}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114132932225045304}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2689
+--- !u!114 &114104465806636404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Main Menu Looping
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Main Menu Looping
+  guid: 26e3e3ee1a38fc4b9dc1be9cfdc95ee2
+  Banks:
+  - {fileID: 114885576325473696}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114818059486350746}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 69000
+--- !u!114 &114132932225045304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/EnemyFootstepsSquish/EnemyIsMoving
+  m_EditorClassIdentifier: 
+  Name: EnemyIsMoving
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114265744821998822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Movement/Crunchy Footstep random
+  m_EditorClassIdentifier: 
+  Path: event:/Movement/Crunchy Footstep random
+  guid: 552ccf7b6d95fc49a942a8a31e0e7106
+  Banks:
+  - {fileID: 114885576325473696}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5100
+--- !u!114 &114395591802428946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\shain.allen\Desktop\Name-TBD\Fmod General\Build\Desktop\Master.strings.bank
+  SubDir: 
+  lastModified: 636947314168865792
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1060
+  Exists: 1
+--- !u!114 &114473488182843874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ItemNoises/Item Pickup
+  m_EditorClassIdentifier: 
+  Path: event:/ItemNoises/Item Pickup
+  guid: 1bbc1e466195f74c98d155cd4524ba60
+  Banks:
+  - {fileID: 114885576325473696}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 220
+--- !u!114 &114818059486350746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114885576325473696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\shain.allen\Desktop\Name-TBD\Fmod General\Build\Desktop\Master.bank
+  SubDir: 
+  lastModified: 636947314168855772
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1227808
+  Exists: 1
