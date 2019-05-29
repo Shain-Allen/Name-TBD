@@ -60,7 +60,7 @@ public class Movement : MonoBehaviour
         collectible = GameObject.Find("Collectible");
         collectTransform = collectible.GetComponent<Transform>();
 
-        InvokeRepeating("CallFootsteps", 0, movementSpeed);
+        InvokeRepeating("CallFootsteps", 0, 1);
     }
 
     void Update()
@@ -147,9 +147,8 @@ public class Movement : MonoBehaviour
 
         Rigidbody2D MyRigibody = gameObject.GetComponent<Rigidbody2D>();
 
-        Debug.Log(isMoving);
-
         movementSpeed = Mathf.Abs((MyRigibody.velocity.x + MyRigibody.velocity.y) / 2.0f);
+        Debug.Log(movementSpeed);
     }
 
     void CallFootsteps()

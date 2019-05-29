@@ -19,14 +19,42 @@ MonoBehaviour:
   - {fileID: 114065511259821248}
   - {fileID: 114295627108133150}
   - {fileID: 114933035691915968}
-  - {fileID: 114703451934411090}
+  - {fileID: 114632194883518676}
+  - {fileID: 114812254892505352}
+  - {fileID: 114531932127638406}
+  - {fileID: 114600853388426072}
+  - {fileID: 114161463344076600}
+  - {fileID: 114010372889783518}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114187103748727762}
   StringsBanks:
   - {fileID: 114763822949886858}
-  stringsBankWriteTime: 636947304969943340
+  stringsBankWriteTime: 636947370288892805
   cacheVersion: 3
+--- !u!114 &114010372889783518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Level Complete Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Level Complete Music
+  guid: e6f361eb9126644b9640aff03df76abc
+  Banks:
+  - {fileID: 114187103748727762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6857
 --- !u!114 &114065511259821248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,7 +77,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 220
+  Length: 2129
 --- !u!114 &114084863781776518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +164,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1110
   Exists: 1
+--- !u!114 &114161463344076600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/Enemy Warning Noise
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Enemy Warning Noise
+  guid: bd30a48304c9bd4abb3dc35a5606fac1
+  Banks:
+  - {fileID: 114187103748727762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
 --- !u!114 &114163523596280512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,11 +274,11 @@ MonoBehaviour:
   Path: C:\Users\shain.allen\Desktop\Name-TBD\Charles\Fmod Files For Cool Sound Kids\Fmod
     General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636947304969763168
+  lastModified: 636947370288827743
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1227808
+    Value: 1895040
   Exists: 1
 --- !u!114 &114256474747556912
 MonoBehaviour:
@@ -252,6 +303,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 220
+--- !u!114 &114274462755294180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114279093135808492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,10 +384,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114171934366010416}
+  - {fileID: 114409352227847042}
   MinDistance: 0
   MaxDistance: 0
-  Length: 69000
+  Length: 97000
 --- !u!114 &114298235245833984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +435,23 @@ MonoBehaviour:
   m_Name: parameter:/EnemyFootstepsSquish/EnemyIsMoving
   m_EditorClassIdentifier: 
   Name: EnemyIsMoving
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114409352227847042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
   Min: 0
   Max: 1
   Default: 0
@@ -521,6 +606,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5100
+--- !u!114 &114531932127638406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Background Ambient
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Background Ambient
+  guid: 6b925a87c2198a44afcacab5e933f13b
+  Banks:
+  - {fileID: 114187103748727762}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 18461
 --- !u!114 &114564607259336116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,6 +674,52 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1110
   Exists: 1
+--- !u!114 &114600853388426072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/EnemyFootstepsSquish
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/EnemyFootstepsSquish
+  guid: 6d7915908bec1d4c905963b7204f6f6b
+  Banks:
+  - {fileID: 114187103748727762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2689
+--- !u!114 &114632194883518676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/Enemy Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Enemy Attack
+  guid: 2b59c2d808b7b543839abc4b28db7850
+  Banks:
+  - {fileID: 114187103748727762}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
 --- !u!114 &114644577284711360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,13 +768,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Movement/EnemyFootstepsSquish
   guid: 6d7915908bec1d4c905963b7204f6f6b
-  Banks:
-  - {fileID: 114187103748727762}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114644577284711360}
+  - {fileID: 114939838152310874}
   MinDistance: 0
   MaxDistance: 0
   Length: 2689
@@ -639,11 +792,11 @@ MonoBehaviour:
   Path: C:\Users\shain.allen\Desktop\Name-TBD\Charles\Fmod Files For Cool Sound Kids\Fmod
     General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636947304969943340
+  lastModified: 636947370288892805
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1060
+    Value: 1266
   Exists: 1
 --- !u!114 &114777328467921286
 MonoBehaviour:
@@ -686,6 +839,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114812254892505352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player Death
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player Death
+  guid: 2c7efe473e6cc6409e95cfc2f8e7fad8
+  Banks:
+  - {fileID: 114187103748727762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1576
 --- !u!114 &114864497882721688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,3 +945,20 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5100
+--- !u!114 &114939838152310874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/EnemyFootstepsSquish/EnemyIsMoving
+  m_EditorClassIdentifier: 
+  Name: EnemyIsMoving
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
