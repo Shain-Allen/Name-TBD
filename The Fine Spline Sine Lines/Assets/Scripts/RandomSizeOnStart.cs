@@ -13,6 +13,8 @@ public class RandomSizeOnStart : MonoBehaviour
     {
         float size = Random.Range(min, max);
 
-        gameObject.GetComponent<Transform>().localScale = new Vector3(size, size, 1.0f);
+        Transform t = gameObject.GetComponent<Transform>();
+
+        t.localScale = new Vector3(t.localScale.x + size, t.localScale.y + size, 1.0f);
     }
 }

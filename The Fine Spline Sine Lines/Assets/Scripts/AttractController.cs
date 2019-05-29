@@ -20,22 +20,12 @@ public class AttractController : MonoBehaviour
         player = GameObject.Find("Player");
         playerTransform = player.GetComponent<Transform>();
         movement = player.GetComponent<Movement>();
-        Vector3 direction = Vector3.zero;
+
 
         if (Vector3.Distance(transform.position, playerTransform.position) > proximity) return;
 
-        float xDistance = Mathf.Abs(playerTransform.position.x - transform.position.x);
-        float yDistance = Mathf.Abs(playerTransform.position.y - transform.position.y);
+        Vector3 direction = transform.position - playerTransform.position;
 
-        if (xDistance > yDistance)
-        {
-            movement.preferedDirection += new Vector3((movement.rangeprefDir.y / xDistance) * strength, playerTransform.position.x, 0.0f);
-        }
-        else
-        {
-            movement.preferedDirection += new Vector3(playerTransform.position.x, (movement.rangeprefDir.y / yDistance) * strength, 0.0f);
-        }
-
-        Debug.Log((movement.rangeprefDir.y / xDistance) * strength);
+        movement.preferedDirection += (direction.normalized / Vector3.Distance(transform.position, playerTransform.position)) * strength;
     }
 }

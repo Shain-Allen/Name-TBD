@@ -38,7 +38,11 @@ public class Movement : MonoBehaviour
     public float tSpeed = 0.1f;
 
     public float changeAmount = 0.1f;
-    
+
+    public float changeMult = 2.0f;
+
+    public float changeCap = 5.0f;
+
     [Header("Hidden")]
     private float timer = 0.0f;
 
@@ -47,9 +51,6 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        preferedDirection = Vector3.zero;
-        Debug.Log(preferedDirection);
-
         goal = GameObject.Find("Goal");
 
         prefTransform = prefered.GetComponent<Transform>();
@@ -59,7 +60,16 @@ public class Movement : MonoBehaviour
 
         changeDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
-        changeDirection = changeDirection.normalized;
+        if (Input.GetMouseButtonDown(0) && changeMult <= changeCap)
+        {
+            changeMult += 0.5f;
+        }
+        else if (changeMult >= 2.0f)
+        {
+            changeMult -= 0.1f;
+        }
+
+        changeDirection = changeDirection.normalized * changeMult;
         
         if (Mathf.Approximately(changeDirection.x, Vector3.zero.x) && Mathf.Approximately(changeDirection.y, Vector3.zero.y))
         {
@@ -81,9 +91,9 @@ public class Movement : MonoBehaviour
 
         preferedDirection = preferedDirection.normalized;
 
-        Debug.Log(preferedDirection);
-
         gameObject.GetComponent<Rigidbody2D>().velocity = (changeDirection + preferedDirection) * speed * Time.deltaTime;
+
+        
 
         float preferedAngle = Mathf.Atan2(preferedDirection.y, preferedDirection.x) * Mathf.Rad2Deg;
 
@@ -92,5 +102,7 @@ public class Movement : MonoBehaviour
         prefered.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, preferedAngle);
 
         change.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, changeAngle);
+
+        preferedDirection = Vector3.zero;
     }
 }
