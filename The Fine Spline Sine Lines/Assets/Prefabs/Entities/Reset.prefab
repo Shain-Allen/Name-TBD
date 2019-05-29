@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b43b813be14d704382bf01071462fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 5
+  proximity: 6
 --- !u!114 &8138144986594004391
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -48,6 +48,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         preferedDirection = Vector3.zero;
+        Debug.Log(preferedDirection);
 
         goal = GameObject.Find("Goal");
 
@@ -57,6 +58,8 @@ public class Movement : MonoBehaviour
         goalTransform = goal.GetComponent<Transform>();
 
         changeDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+
+        changeDirection = changeDirection.normalized;
         
         if (Mathf.Approximately(changeDirection.x, Vector3.zero.x) && Mathf.Approximately(changeDirection.y, Vector3.zero.y))
         {
@@ -77,6 +80,8 @@ public class Movement : MonoBehaviour
         }
 
         preferedDirection = preferedDirection.normalized;
+
+        Debug.Log(preferedDirection);
 
         gameObject.GetComponent<Rigidbody2D>().velocity = (changeDirection + preferedDirection) * speed * Time.deltaTime;
 
