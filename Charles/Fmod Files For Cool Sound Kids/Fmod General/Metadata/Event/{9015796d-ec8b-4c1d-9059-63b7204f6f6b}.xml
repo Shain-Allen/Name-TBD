@@ -8,7 +8,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{cdfe86fb-34c7-475c-b6ef-253422a3fd92}</destination>
+			<destination>{3db5124f-fdf6-451f-909c-fe7b2d987f9a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{3938f9fd-0607-4002-b57c-3ca4fd74f6dd}</destination>
@@ -151,9 +151,6 @@
 		<relationship name="markerTrack">
 			<destination>{4999117d-b5bb-4c3c-97dd-40fa0f2bae28}</destination>
 		</relationship>
-		<relationship name="triggerConditions">
-			<destination>{50c32a80-6a34-470c-89db-2a1064a8d668}</destination>
-		</relationship>
 	</object>
 	<object class="LoopRegion" id="{532b7075-57bb-445c-b469-faf9f46b5c9e}">
 		<property name="position">
@@ -167,9 +164,6 @@
 		</relationship>
 		<relationship name="markerTrack">
 			<destination>{4999117d-b5bb-4c3c-97dd-40fa0f2bae28}</destination>
-		</relationship>
-		<relationship name="triggerConditions">
-			<destination>{a09a25df-ca04-4774-948e-86a042e2535e}</destination>
 		</relationship>
 	</object>
 	<object class="TransitionRegion" id="{5727a818-13f5-4345-b87e-06eea894e3bf}">
@@ -188,15 +182,14 @@
 		<relationship name="destination">
 			<destination>{364cc04f-0b00-4d3d-9912-40bc4fa4478e}</destination>
 		</relationship>
-		<relationship name="triggerConditions">
-			<destination>{2e60b00e-c64e-47bf-98d2-215f8df8bfa7}</destination>
-		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{3f5a3f7b-e14b-4987-a1ed-2e706ceb38ca}">
 		<relationship name="effects">
 			<destination>{b35213c2-5381-46b7-9feb-bef25c8a1d3a}</destination>
 			<destination>{e79c6971-5acc-4dd3-adae-52350758fd69}</destination>
 			<destination>{debfedd3-19f0-4206-8d7b-f9ff4b5b92ae}</destination>
+			<destination>{60884b63-2098-4326-be62-132f4e66ac9d}</destination>
+			<destination>{584b2570-6c4c-4f67-9a31-e8bc910c7ca9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4acb2437-cf82-4d8b-af0d-294f0484c3c7}" />
@@ -272,40 +265,29 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{47df6b7f-4bf7-4692-aa56-d3b73e3be6ec}" />
-	<object class="ParameterCondition" id="{50c32a80-6a34-470c-89db-2a1064a8d668}">
-		<property name="minimum">
-			<value>0.50000005960464478</value>
+	<object class="SFXReverbEffect" id="{b35213c2-5381-46b7-9feb-bef25c8a1d3a}">
+		<property name="decayTime">
+			<value>1400</value>
 		</property>
-		<property name="maximum">
-			<value>1</value>
+		<property name="HFDecayRatio">
+			<value>37</value>
 		</property>
-		<relationship name="parameter">
-			<destination>{5a6fc93e-11be-49d4-9c77-66e46bdf41b2}</destination>
-		</relationship>
+		<property name="lowShelfFrequency">
+			<value>430</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-23</value>
+		</property>
+		<property name="highCut">
+			<value>1000</value>
+		</property>
+		<property name="wetLevel">
+			<value>-5.5</value>
+		</property>
+		<property name="dryLevel">
+			<value>-16</value>
+		</property>
 	</object>
-	<object class="ParameterCondition" id="{a09a25df-ca04-4774-948e-86a042e2535e}">
-		<property name="minimum">
-			<value>0</value>
-		</property>
-		<property name="maximum">
-			<value>1</value>
-		</property>
-		<relationship name="parameter">
-			<destination>{5a6fc93e-11be-49d4-9c77-66e46bdf41b2}</destination>
-		</relationship>
-	</object>
-	<object class="ParameterCondition" id="{2e60b00e-c64e-47bf-98d2-215f8df8bfa7}">
-		<property name="minimum">
-			<value>0.50000005960464478</value>
-		</property>
-		<property name="maximum">
-			<value>1</value>
-		</property>
-		<relationship name="parameter">
-			<destination>{5a6fc93e-11be-49d4-9c77-66e46bdf41b2}</destination>
-		</relationship>
-	</object>
-	<object class="SFXReverbEffect" id="{b35213c2-5381-46b7-9feb-bef25c8a1d3a}" />
 	<object class="MixerBusFader" id="{e79c6971-5acc-4dd3-adae-52350758fd69}" />
 	<object class="CompressorEffect" id="{debfedd3-19f0-4206-8d7b-f9ff4b5b92ae}">
 		<property name="attackTime">
@@ -313,6 +295,25 @@
 		</property>
 		<property name="releaseTime">
 			<value>1400</value>
+		</property>
+	</object>
+	<object class="CompressorEffect" id="{60884b63-2098-4326-be62-132f4e66ac9d}">
+		<property name="threshold">
+			<value>-33</value>
+		</property>
+		<property name="ratio">
+			<value>45</value>
+		</property>
+		<property name="attackTime">
+			<value>3.20000005</value>
+		</property>
+		<property name="releaseTime">
+			<value>42</value>
+		</property>
+	</object>
+	<object class="GainEffect" id="{584b2570-6c4c-4f67-9a31-e8bc910c7ca9}">
+		<property name="gain">
+			<value>3.5</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{67895575-74e3-4854-a100-d8f21e9c7d1d}" />
