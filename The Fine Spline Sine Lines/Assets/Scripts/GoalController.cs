@@ -6,6 +6,8 @@ public class GoalController : MonoBehaviour
 {
     public LevelManager LevelManager;
 
+    public int LevelToLoad = -1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,15 @@ public class GoalController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.name != "Player") return;
-        LevelManager.LoadNextLevel();
+        if (LevelToLoad == -1)
+        {
+            LevelManager.LoadNextLevel();
+        }
+        else
+        {
+            LevelManager.LoadLevel(LevelToLoad);
+        }
+        
         Destroy(gameObject);
     }
 }
