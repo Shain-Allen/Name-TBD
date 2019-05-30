@@ -194,6 +194,7 @@ MonoBehaviour:
   changeTime: 1
   isMoving: 0
   footsteps: event:/Movement/Crunchy Footstep random
+  movementMulti: 100
 --- !u!114 &1976017889365247366
 MonoBehaviour:
   m_ObjectHideFlags: 0

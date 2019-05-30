@@ -24,7 +24,7 @@ public class CollectibleController : MonoBehaviour
         if (collider.gameObject.name != "Player") return;
 
         PlayPickupSound.start();
-        Debug.Log("heck");
+        //Debug.Log("heck");
 
         levelManager = GameObject.Find("Camera").GetComponent<LevelManager>();
 

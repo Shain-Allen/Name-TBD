@@ -147,8 +147,8 @@ public class Movement : MonoBehaviour
 
         Rigidbody2D MyRigibody = gameObject.GetComponent<Rigidbody2D>();
 
-        movementSpeed = Mathf.Abs((MyRigibody.velocity.x + MyRigibody.velocity.y) / 2.0f);
-        Debug.Log(movementSpeed);
+        movementSpeed = (Mathf.Abs((MyRigibody.velocity.x + MyRigibody.velocity.y) / 2.0f));
+        //Debug.Log(movementSpeed);
     }
 
     void CallFootsteps()

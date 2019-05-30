@@ -119,3 +119,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbcd3bed6dadd4089db8660fa35bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathNoise: event:/Player/Player Death
