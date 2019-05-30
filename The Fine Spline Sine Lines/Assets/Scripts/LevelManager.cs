@@ -6,22 +6,15 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject[] Levels;
 
+    public float[] CameraSizes;
+
     public GameObject Level;
 
     public int currentLevel = 0;
 
-    public bool[] Collectibles;
-
-    public float[] Times;
-
     // Start is called before the first frame update
     void Start()
     {
-        Collectibles = new bool[Levels.Length];
-        Collectibles = new bool[Levels.Length];
-
-        Times = new float[Levels.Length];
-
         LoadLevel(0);
     }
 
@@ -35,6 +28,15 @@ public class LevelManager : MonoBehaviour
         if (destroyPrevious) DestroyLevel();
 
         Level = Instantiate(Levels[levelNumber]);
+
+        CameraController cc = gameObject.GetComponent<CameraController>();
+
+        cc.top = GameObject.Find("Top");
+        cc.bottom = GameObject.Find("Bottom");
+        cc.right = GameObject.Find("Right");
+        cc.left = GameObject.Find("Left");
+
+        cc.player = GameObject.Find("Player");
 
         currentLevel = levelNumber;
     }

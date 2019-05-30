@@ -778,7 +778,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Tutorial
---- !u!114 &6464711865594047524
+--- !u!114 &9207300069084656606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -859,23 +859,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6664399122750098916, guid: 7c7df08ea6f6ca54ab3a371a718bb1b8,
-        type: 3}
-      propertyPath: speed
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6664399122750098916, guid: 7c7df08ea6f6ca54ab3a371a718bb1b8,
-        type: 3}
-      propertyPath: changeMult
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6664399122750098916, guid: 7c7df08ea6f6ca54ab3a371a718bb1b8,
-        type: 3}
-      propertyPath: changeCap
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8316568854603638660, guid: 7c7df08ea6f6ca54ab3a371a718bb1b8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c7df08ea6f6ca54ab3a371a718bb1b8, type: 3}
 --- !u!4 &7931824685059425224 stripped
 Transform:
@@ -949,11 +933,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Goal (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4730721071287221693, guid: 5ebabc505bb557446bc52db3a5a1d3ae,
-        type: 3}
-      propertyPath: LevelToLoad
-      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ebabc505bb557446bc52db3a5a1d3ae, type: 3}

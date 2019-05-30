@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 1668391164}
   - component: {fileID: 1668391163}
   - component: {fileID: 1668391167}
+  - component: {fileID: 1668391168}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -219,7 +220,23 @@ MonoBehaviour:
   Levels:
   - {fileID: 3278341007547291393, guid: 621438537b9cec743b71d1922a496788, type: 3}
   - {fileID: 3278341007547291393, guid: c6a0f6ba138b4c04090516f3fc53d0b2, type: 3}
+  CameraSizes: []
   Level: {fileID: 0}
   currentLevel: 0
-  Collectibles: 
-  Times: []
+--- !u!114 &1668391168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668391162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e96e8c21060bc4eb632813d3fb402c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  top: {fileID: 0}
+  bottom: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
