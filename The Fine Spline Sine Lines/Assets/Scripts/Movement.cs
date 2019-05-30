@@ -43,7 +43,14 @@ public class Movement : MonoBehaviour
     private float timer = 0.0f;
 
     public bool isMoving = false;
-    
+
+
+    private Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -92,5 +99,11 @@ public class Movement : MonoBehaviour
         prefered.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, preferedAngle);
 
         change.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, changeAngle);
+
+        //animation is controlled here
+        Rigidbody2D direction = gameObject.GetComponent<Rigidbody2D>();
+
+        anim.SetFloat("MoveX", direction.velocity.x);
+        anim.SetFloat("MoveY", direction.velocity.y);
     }
 }
