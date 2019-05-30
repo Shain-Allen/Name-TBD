@@ -32,7 +32,7 @@ public class GoalController : MonoBehaviour
         {
             LevelManager.LoadLevel(LevelToLoad);
         }
-        
+
         Destroy(gameObject);
     }
 }

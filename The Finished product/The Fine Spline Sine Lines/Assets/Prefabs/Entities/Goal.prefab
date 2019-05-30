@@ -95,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
   LevelToLoad: -1
+  FinishNoise: event:/Creaky Gate/Creaky Gate Level Complete
 --- !u!61 &7385919909903241138
 BoxCollider2D:
   m_ObjectHideFlags: 0

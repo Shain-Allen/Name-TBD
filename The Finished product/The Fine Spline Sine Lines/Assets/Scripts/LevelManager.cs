@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
 
     public int currentLevel = 0;
 
-[FMODUnity.EventRef]
+    [FMODUnity.EventRef]
     public string FinishNoise;
 
     FMOD.Studio.EventInstance PlayFinishNoise;
@@ -54,14 +54,15 @@ public class LevelManager : MonoBehaviour
         if (currentLevel < Levels.Length - 1)
         {
             currentLevel++;
-			//put sound here
-            PlayFinishNoise.start();
             LoadLevel(currentLevel);
         }
         else
         {
             LoadLevel(0);
         }
+
+        //put sound here
+        PlayFinishNoise.start();
     }
     
     // Update is called once per frame
