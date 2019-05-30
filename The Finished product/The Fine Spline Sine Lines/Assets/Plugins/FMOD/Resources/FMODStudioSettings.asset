@@ -15,12 +15,10 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: C:\Users\Shain Allen\Documents\Name-TBD\Beta Stuff\Sound Stuff\Fmod
-    General\Fmod General.fspro
-  SourceProjectPathUnformatted: C:\Users\Shain Allen\Documents\Name-TBD\Beta Stuff\Sound
-    Stuff\Fmod General\Fmod General.fspro
-  SourceBankPathUnformatted: C:\Users\Shain Allen\Documents\Name-TBD\Beta Stuff\Sound
-    Stuff\Fmod General\Build
+  sourceProjectPath: E:\Dekstop\The Finished product\Fmod General\Fmod General.fspro
+  SourceProjectPathUnformatted: E:\Dekstop\The Finished product\Fmod General\Fmod
+    General.fspro
+  SourceBankPathUnformatted: E:\Dekstop\The Finished product\Fmod General\Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
