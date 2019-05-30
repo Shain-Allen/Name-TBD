@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 114731518282864446}
   StringsBanks:
   - {fileID: 114472371880874760}
-  stringsBankWriteTime: 636947586091781617
+  stringsBankWriteTime: 636948165569978030
   cacheVersion: 3
 --- !u!114 &114010372889783518
 MonoBehaviour:
@@ -491,6 +491,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114368469041981868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114400081919781944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +581,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114424051256757628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +683,7 @@ MonoBehaviour:
   Path: C:\Users\Shain Allen\Documents\Name-TBD\Charles\Fmod Files For Cool Sound
     Kids\Fmod General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636947586091781617
+  lastModified: 636948165569978030
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -802,7 +819,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114418545474577784}
+  - {fileID: 114368469041981868}
   MinDistance: 0
   MaxDistance: 0
   Length: 97000
@@ -992,7 +1009,7 @@ MonoBehaviour:
   Path: C:\Users\Shain Allen\Documents\Name-TBD\Charles\Fmod Files For Cool Sound
     Kids\Fmod General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636947586091721564
+  lastModified: 636948165569968022
   LoadResult: 0
   FileSizes:
   - Name: Desktop
