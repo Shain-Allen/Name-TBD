@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bbcd3bed6dadd4089db8660fa35bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathNoise: event:/Player/Player Death
 --- !u!61 &61100716881218354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proximity: 6
+  strength: 10
 --- !u!114 &8138144986594004391
 MonoBehaviour:
   m_ObjectHideFlags: 0

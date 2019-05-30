@@ -47,7 +47,19 @@ public class Movement : MonoBehaviour
     private float timer = 0.0f;
 
     public bool isMoving = false;
-    
+
+    [FMODUnity.EventRef]
+    public string footsteps;
+    private float movementSpeed;
+
+    private Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+
+        InvokeRepeating("CallFootsteps", 0, 1);
+    }
 
     void Update()
     {
@@ -104,5 +116,23 @@ public class Movement : MonoBehaviour
         change.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, changeAngle);
 
         preferedDirection = Vector3.zero;
+
+        Rigidbody2D MyRigibody = gameObject.GetComponent<Rigidbody2D>();
+
+        movementSpeed = (Mathf.Abs((MyRigibody.velocity.x + MyRigibody.velocity.y) / 2.0f));
+
+        //animation is controlled here
+        Rigidbody2D direction = gameObject.GetComponent<Rigidbody2D>();
+
+        anim.SetFloat("MoveX", direction.velocity.x);
+        anim.SetFloat("MoveY", direction.velocity.y);
+    }
+
+    void CallFootsteps()
+    {
+        if (isMoving == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(footsteps);
+        }
     }
 }

@@ -121,6 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64497a965663ee4d840969c4817667f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupNoise: event:/ItemNoises/Item Pickup
+  levelManager: {fileID: 0}
   amount: {x: 0.1, y: 0.1}
 --- !u!114 &3116566026359389162
 MonoBehaviour:
