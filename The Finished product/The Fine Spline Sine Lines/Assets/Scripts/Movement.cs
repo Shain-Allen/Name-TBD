@@ -78,7 +78,7 @@ public class Movement : MonoBehaviour
         }
         else if (changeMult >= 2.0f)
         {
-            changeMult -= 0.1f;
+            changeMult -= 0.01f;
         }
 
         changeDirection = changeDirection.normalized * changeMult;

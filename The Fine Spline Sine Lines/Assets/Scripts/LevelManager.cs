@@ -12,6 +12,15 @@ public class LevelManager : MonoBehaviour
 
     public int currentLevel = 0;
 
+[FMODUnity.EventRef]
+    public string FinishNoise;
+
+    FMOD.Studio.EventInstance PlayFinishNoise;
+
+    void Awake()
+    {
+        PlayFinishNoise = FMODUnity.RuntimeManager.CreateInstance(FinishNoise);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +65,8 @@ public class LevelManager : MonoBehaviour
         if (currentLevel < Levels.Length - 1)
         {
             currentLevel++;
+			//put sound here
+            PlayFinishNoise.start();
             LoadLevel(currentLevel);
         }
         else

@@ -10,11 +10,7 @@ public class LevelManager : MonoBehaviour
 
     public int currentLevel = 0;
 
-    public bool[] Collectibles;
-
-    public float[] Times;
-
-    [FMODUnity.EventRef]
+[FMODUnity.EventRef]
     public string FinishNoise;
 
     FMOD.Studio.EventInstance PlayFinishNoise;
@@ -23,15 +19,9 @@ public class LevelManager : MonoBehaviour
     {
         PlayFinishNoise = FMODUnity.RuntimeManager.CreateInstance(FinishNoise);
     }
-
     // Start is called before the first frame update
     void Start()
     {
-        Collectibles = new bool[Levels.Length];
-        Collectibles = new bool[Levels.Length];
-
-        Times = new float[Levels.Length];
-
         LoadLevel(0);
     }
 
@@ -64,7 +54,7 @@ public class LevelManager : MonoBehaviour
         if (currentLevel < Levels.Length - 1)
         {
             currentLevel++;
-            //put sound here
+			//put sound here
             PlayFinishNoise.start();
             LoadLevel(currentLevel);
         }
