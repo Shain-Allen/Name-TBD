@@ -223,3 +223,4 @@ MonoBehaviour:
   currentLevel: 0
   Collectibles: 
   Times: []
+  FinishNoise: event:/Music/Level Complete Music

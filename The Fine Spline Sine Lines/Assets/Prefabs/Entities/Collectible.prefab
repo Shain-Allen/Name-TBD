@@ -93,7 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7815309ce835fc842a93ab47e0351059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelController: {fileID: 0}
+  pickupNoise: event:/ItemNoises/Item Pickup
+  levelManager: {fileID: 0}
 --- !u!58 &266002245
 CircleCollider2D:
   m_ObjectHideFlags: 0

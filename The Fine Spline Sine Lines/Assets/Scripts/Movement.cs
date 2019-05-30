@@ -27,11 +27,7 @@ public class Movement : MonoBehaviour
 
     public Vector3 changeDirection = Vector3.zero;
 
-    public Vector3 randomChangeDirection = Vector3.zero;
-
     [Header("Ranges")]
-
-    public Vector2 rangeRandChangeDir = Vector2.zero;
 
     public Vector2 rangeChangeDir = Vector2.zero;
 
@@ -46,18 +42,25 @@ public class Movement : MonoBehaviour
     public float changeAmount = 0.1f;
 
     public float changeTime = 1.0f;
-    
+
     [Header("Hidden")]
     private float timer = 0.0f;
 
-    private float t = 0.0f;
+    private float tX = 0.0f;
+    private float tY = 0.0f;
 
     public bool isMoving = false;
+
+    [FMODUnity.EventRef]
+    public string footsteps;
+    private float movementSpeed;
 
     private void Start()
     {
         collectible = GameObject.Find("Collectible");
         collectTransform = collectible.GetComponent<Transform>();
+
+        InvokeRepeating("CallFootsteps", 0, 1);
     }
 
     void Update()
@@ -68,34 +71,43 @@ public class Movement : MonoBehaviour
         changeTransform = change.GetComponent<Transform>();
 
         goalTransform = goal.GetComponent<Transform>();
-        
 
-        if (t >= 1.0f) t = 1.0f;
-        else t += Time.deltaTime * tSpeed;
 
-        if (Input.GetKey(KeyCode.W))
+        if (tX >= 1.0f) tX = 1.0f;
+        else tX += Time.deltaTime * tSpeed;
+
+        if (tY >= 1.0f) tY = 1.0f;
+        else tY += Time.deltaTime * tSpeed;
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             changeDirection.y += changeAmount;
-            t = 0.0f;
+            tY = 0.0f;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             changeDirection.y -= changeAmount;
-            t = 0.0f;
+            tY = 0.0f;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             changeDirection.x += changeAmount;
-            t = 0.0f;
+            tX = 0.0f;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             changeDirection.x -= changeAmount;
-            t = 0.0f;
+            tX = 0.0f;
         }
-        else
+
+        if (!(Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftArrow)) && !(Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.RightArrow)))
         {
-            changeDirection = Vector3.Lerp(changeDirection, Vector3.zero, t);
+            changeDirection.x = Mathf.Lerp(changeDirection.x, 0.0f, tX);
+        }
+
+        if (!(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.UpArrow)) && !(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.DownArrow)))
+        {
+            changeDirection.y = Mathf.Lerp(changeDirection.y, 0.0f, tY);
         }
 
         if (Mathf.Approximately(changeDirection.x, Vector3.zero.x) && Mathf.Approximately(changeDirection.y, Vector3.zero.y))
@@ -132,5 +144,18 @@ public class Movement : MonoBehaviour
         prefered.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, preferedAngle);
 
         change.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, changeAngle);
+
+        Rigidbody2D MyRigibody = gameObject.GetComponent<Rigidbody2D>();
+
+        movementSpeed = (Mathf.Abs((MyRigibody.velocity.x + MyRigibody.velocity.y) / 2.0f));
+        //Debug.Log(movementSpeed);
+    }
+
+    void CallFootsteps()
+    {
+        if(isMoving == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(footsteps);
+        }
     }
 }
