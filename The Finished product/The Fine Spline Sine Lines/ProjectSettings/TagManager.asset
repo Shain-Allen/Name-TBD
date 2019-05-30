@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Level
   - Reset
+  - Pickup
   layers:
   - Default
   - TransparentFX

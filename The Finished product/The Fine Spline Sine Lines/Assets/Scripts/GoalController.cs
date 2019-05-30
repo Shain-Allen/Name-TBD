@@ -17,6 +17,13 @@ public class GoalController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.name != "Player") return;
+
+        if (GameObject.FindGameObjectWithTag("Pickup") != null)
+        {
+            LevelManager.Reloadlevel();
+            return;
+        }
+
         if (LevelToLoad == -1)
         {
             LevelManager.LoadNextLevel();
