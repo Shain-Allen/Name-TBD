@@ -96,7 +96,7 @@
 	<object class="MixerBusPanner" id="{ab7e0ba3-0a99-4a4b-9f80-434fa92904e3}" />
 	<object class="MultiSound" id="{8076efaa-b5db-497d-854f-c49d782468f7}">
 		<property name="length">
-			<value>2.1000000000000001</value>
+			<value>1.98</value>
 		</property>
 		<property name="maxVoices">
 			<value>9</value>
@@ -135,7 +135,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>2.1000000000000001</value>
+			<value>1.98</value>
 		</property>
 		<property name="name">
 			<value>loop step</value>
@@ -152,7 +152,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>2.1000000000000001</value>
+			<value>1.98</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{628f553e-8d0e-40fb-ba0a-61f59509c228}</destination>
@@ -163,6 +163,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{a484eacc-971e-4ab9-8ef2-5c1f5f56f5f3}">
 		<relationship name="effects">
+			<destination>{2bdf6d08-c66e-4d7f-98c7-798c58a75a11}</destination>
 			<destination>{ba1d820f-d9ea-419c-bf1e-ca08b7ad6b80}</destination>
 		</relationship>
 	</object>
@@ -212,6 +213,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e07ec7c6-71f1-4f95-a53a-65249d0177dc}" />
+	<object class="GainEffect" id="{2bdf6d08-c66e-4d7f-98c7-798c58a75a11}">
+		<property name="gain">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ba1d820f-d9ea-419c-bf1e-ca08b7ad6b80}" />
 	<object class="AutomationCurve" id="{04e610f2-ac5c-4f97-bb06-c1fee26ffaaa}">
 		<relationship name="parameter">

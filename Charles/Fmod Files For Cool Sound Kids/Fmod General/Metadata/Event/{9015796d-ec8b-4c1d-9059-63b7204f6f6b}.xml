@@ -154,6 +154,7 @@
 			<destination>{e79c6971-5acc-4dd3-adae-52350758fd69}</destination>
 			<destination>{debfedd3-19f0-4206-8d7b-f9ff4b5b92ae}</destination>
 			<destination>{60884b63-2098-4326-be62-132f4e66ac9d}</destination>
+			<destination>{189e521d-fe3a-4ba0-8ca9-5deb5fd98db9}</destination>
 			<destination>{584b2570-6c4c-4f67-9a31-e8bc910c7ca9}</destination>
 		</relationship>
 	</object>
@@ -255,6 +256,9 @@
 	</object>
 	<object class="MixerBusFader" id="{e79c6971-5acc-4dd3-adae-52350758fd69}" />
 	<object class="CompressorEffect" id="{debfedd3-19f0-4206-8d7b-f9ff4b5b92ae}">
+		<property name="ratio">
+			<value>6.5999999</value>
+		</property>
 		<property name="attackTime">
 			<value>3.60000014</value>
 		</property>
@@ -264,7 +268,7 @@
 	</object>
 	<object class="CompressorEffect" id="{60884b63-2098-4326-be62-132f4e66ac9d}">
 		<property name="threshold">
-			<value>-33</value>
+			<value>-39</value>
 		</property>
 		<property name="ratio">
 			<value>45</value>
@@ -276,9 +280,14 @@
 			<value>42</value>
 		</property>
 	</object>
+	<object class="GainEffect" id="{189e521d-fe3a-4ba0-8ca9-5deb5fd98db9}">
+		<property name="gain">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="GainEffect" id="{584b2570-6c4c-4f67-9a31-e8bc910c7ca9}">
 		<property name="gain">
-			<value>3.5</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{67895575-74e3-4854-a100-d8f21e9c7d1d}" />
