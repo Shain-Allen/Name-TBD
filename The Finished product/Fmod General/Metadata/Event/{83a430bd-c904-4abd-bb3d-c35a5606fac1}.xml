@@ -117,6 +117,7 @@
 		<relationship name="effects">
 			<destination>{a6a59f63-34a5-4d33-9a01-6eb2b82a5b94}</destination>
 			<destination>{a19de4d5-6e9f-48c8-933b-a3c13cfc0d9c}</destination>
+			<destination>{1fe32c3e-17ad-43dc-af5a-b7b51a658645}</destination>
 			<destination>{f9cf110f-54b4-4b76-9c0c-4eb067818cdc}</destination>
 		</relationship>
 	</object>
@@ -158,6 +159,11 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{a19de4d5-6e9f-48c8-933b-a3c13cfc0d9c}" />
+	<object class="GainEffect" id="{1fe32c3e-17ad-43dc-af5a-b7b51a658645}">
+		<property name="gain">
+			<value>5.5</value>
+		</property>
+	</object>
 	<object class="SFXReverbEffect" id="{f9cf110f-54b4-4b76-9c0c-4eb067818cdc}">
 		<property name="decayTime">
 			<value>4900</value>
