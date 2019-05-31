@@ -31,7 +31,7 @@ MonoBehaviour:
   - {fileID: 114097655934029146}
   StringsBanks:
   - {fileID: 114303196433972738}
-  stringsBankWriteTime: 636949040195265334
+  stringsBankWriteTime: 636949056548652198
   cacheVersion: 3
 --- !u!114 &114008033723065676
 MonoBehaviour:
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\sage.dupuy\Documents\GitHub\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636949040195245319
+  lastModified: 636949056548642197
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\sage.dupuy\Documents\GitHub\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636949040195265334
+  lastModified: 636949056548652198
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -573,7 +573,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114448890401893158}
+  - {fileID: 114774847199334154}
   MinDistance: 0
   MaxDistance: 0
   Length: 97000
@@ -819,6 +819,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2500
+--- !u!114 &114774847199334154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114791033578034356
 MonoBehaviour:
   m_ObjectHideFlags: 0
