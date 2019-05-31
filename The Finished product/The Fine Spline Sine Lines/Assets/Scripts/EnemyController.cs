@@ -6,40 +6,50 @@ public class EnemyController : MonoBehaviour
 {
     public float speed = 2.0f;
 
-    public float proximity = 2.0f;
+    public Vector3 positionStart = Vector3.zero;
 
-    public Vector3 restartPos = Vector3.zero;
+    public Vector3 positionEnd = Vector3.zero;
 
-    private GameObject dot;
+    public float waitTimeBetween = 0.1f;
 
-    // Start is called before the first frame update
-    void Start()
+    public float t = 0.0f;
+
+    public bool forward = true;
+
+
+    private void Start()
     {
-        restartPos = gameObject.GetComponent<Transform>().position;
+        positionStart = transform.position + positionStart;
 
-        dot = GameObject.Find("Dot");
+        positionEnd = transform.position + positionEnd;
     }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject != dot) return;
-
-        gameObject.GetComponent<Transform>().position = restartPos;
-        gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-    }
-
     // Update is called once per frame
     void Update()
     {
         Transform pos = gameObject.GetComponent<Transform>();
 
-        Transform dPos = dot.GetComponent<Transform>();
+        t += Time.deltaTime * speed;
 
-        if (Vector3.Distance(dPos.position, pos.position) <= proximity)
+        if (pos.position.x == positionEnd.x && pos.position.y == positionEnd.y && t >= 1.0f)
         {
-            Vector3 dir = dPos.position - pos.position;
+            forward = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            t = 0.0f;
+        }
+        else if (pos.position.x == positionStart.x && pos.position.y == positionStart.y && t >= 1.0f)
+        {
+            forward = true;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            t = 0.0f;
+        }
 
-            gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(dir.x, dir.y).normalized *speed * Time.deltaTime;
+        if (forward)
+        {
+            pos.position = Vector3.Lerp(positionStart, positionEnd, t);
+        }
+        else
+        {
+            pos.position = Vector3.Lerp(positionEnd, positionStart, t);
         }
     }
 }
