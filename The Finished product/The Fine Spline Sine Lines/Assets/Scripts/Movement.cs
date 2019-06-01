@@ -111,7 +111,7 @@ public class Movement : MonoBehaviour
 
         float changeAngle = Mathf.Atan2(changeDirection.y, changeDirection.x) * Mathf.Rad2Deg;
 
-        prefered.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, preferedAngle);
+        prefered.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, preferedAngle+45.0f);
 
         change.GetComponent<Transform>().eulerAngles = new Vector3(0.0f, 0.0f, changeAngle);
 
