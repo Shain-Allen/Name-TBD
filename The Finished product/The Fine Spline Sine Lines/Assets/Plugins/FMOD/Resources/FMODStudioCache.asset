@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 114956988901436128}
   StringsBanks:
   - {fileID: 114743419840520786}
-  stringsBankWriteTime: 636949167757413863
+  stringsBankWriteTime: 636950036018539301
   cacheVersion: 3
 --- !u!114 &114002356862515774
 MonoBehaviour:
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Shain Allen\Documents\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636949167757413863
+  lastModified: 636950036018539301
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -2201,7 +2201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Shain Allen\Documents\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636949167757393848
+  lastModified: 636950036018539301
   LoadResult: 0
   FileSizes:
   - Name: Desktop
