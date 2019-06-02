@@ -64,10 +64,4 @@ public class LevelManager : MonoBehaviour
         //put sound here
         PlayFinishNoise.start();
     }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

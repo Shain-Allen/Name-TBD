@@ -8,6 +8,10 @@ public class GoalController : MonoBehaviour
 
     public int LevelToLoad = -1;
 
+    private bool load = false;
+
+    private GameObject Fade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +20,28 @@ public class GoalController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name != "Player") return;
+        if (collider.gameObject.name != "Player" || load) return;
 
         if (GameObject.FindGameObjectWithTag("Pickup") != null)
         {
             LevelManager.Reloadlevel();
             return;
         }
+
+        load = true;
+        Fade = GameObject.Find("Fade");
+        Fade.GetComponent<FadeController>().t = 0.0f;
+    }
+
+    void Update()
+    {
+        if (!load) return;
+
+        if (Fade == null) return;
+        
+        Fade.GetComponent<FadeController>().fade = true;
+
+        if (Fade.GetComponent<FadeController>().t <= 1.0f) return;
 
         if (LevelToLoad == -1)
         {
@@ -32,7 +51,5 @@ public class GoalController : MonoBehaviour
         {
             LevelManager.LoadLevel(LevelToLoad);
         }
-
-        Destroy(gameObject);
     }
 }
