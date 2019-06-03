@@ -12,6 +12,14 @@ public class GoalController : MonoBehaviour
 
     private GameObject Fade;
 
+    public Sprite[] anim;
+
+    public float frameRate = 0.25f;
+
+    private int frame = 0;
+
+    private float timer = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +47,18 @@ public class GoalController : MonoBehaviour
 
     void Update()
     {
+        if (GameObject.FindGameObjectWithTag("Pickup") == null)
+        {
+            Debug.Log(frame);
+
+            if(timer <= anim.Length) timer += Time.deltaTime;
+            if (timer >= frameRate && frame < anim.Length - 1)
+            {
+                timer = 0.0f;
+                gameObject.GetComponent<SpriteRenderer>().sprite = anim[++frame];
+            }
+        }
+
         if (!load) return;
 
         if (Fade == null) return;

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 114060705326768726}
   - component: {fileID: 3116566026359389162}
   - component: {fileID: 2693178451949710054}
+  - component: {fileID: 8327248027392041016}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Pickup
@@ -154,3 +155,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max: 0.5
   min: -0.5
+--- !u!114 &8327248027392041016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574649421206496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff18b8ae5112f34ba4a245795a09a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
