@@ -32,6 +32,8 @@ public class ResetOnTouch : MonoBehaviour
         collision.gameObject.GetComponent<Movement>().enabled = false;
         collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+        if (gameObject.name.Contains("Enemy")) gameObject.GetComponent<EnemyController>().enabled = false;
     }
 
     void Update()
