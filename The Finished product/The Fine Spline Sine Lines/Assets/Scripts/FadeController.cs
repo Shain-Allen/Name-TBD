@@ -12,13 +12,11 @@ public class FadeController : MonoBehaviour
 
     public void FadeOut()
     {
-        t += Time.deltaTime * fadeSpeed;
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0.0f, 0.0f, 0.0f, Mathf.Lerp(0.0f, 1.0f, t));
     }
 
     public void FadeIn()
     {
-        t += Time.deltaTime * fadeSpeed;
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0.0f, 0.0f, 0.0f, Mathf.Lerp(1.0f, 0.0f, t));
     }
 
@@ -37,5 +35,7 @@ public class FadeController : MonoBehaviour
         {
             FadeIn();
         }
+
+        if(t <= 1.1f) t += Time.deltaTime * fadeSpeed;
     }
 }

@@ -28,6 +28,10 @@ public class ResetOnTouch : MonoBehaviour
         load = true;
         Fade = GameObject.Find("Fade");
         Fade.GetComponent<FadeController>().t = 0.0f;
+
+        collision.gameObject.GetComponent<Movement>().enabled = false;
+        collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     void Update()
@@ -39,6 +43,10 @@ public class ResetOnTouch : MonoBehaviour
         Fade.GetComponent<FadeController>().fade = true;
 
         if (Fade.GetComponent<FadeController>().t <= 1.0f) return;
+
+        Fade.GetComponent<FadeController>().fade = false;
+
+        Fade.GetComponent<FadeController>().t = 0.0f;
 
         GameObject.Find("Camera").GetComponent<LevelManager>().Reloadlevel();
     }

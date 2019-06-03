@@ -44,8 +44,6 @@ public class Movement : MonoBehaviour
     public float changeCap = 5.0f;
 
     [Header("Hidden")]
-    private float timer = 0.0f;
-
     public bool isMoving = false;
 
     [FMODUnity.EventRef]

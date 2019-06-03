@@ -31,6 +31,10 @@ public class GoalController : MonoBehaviour
         load = true;
         Fade = GameObject.Find("Fade");
         Fade.GetComponent<FadeController>().t = 0.0f;
+
+        collider.gameObject.GetComponent<Movement>().enabled = false;
+        collider.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     void Update()
@@ -42,6 +46,10 @@ public class GoalController : MonoBehaviour
         Fade.GetComponent<FadeController>().fade = true;
 
         if (Fade.GetComponent<FadeController>().t <= 1.0f) return;
+
+        Fade.GetComponent<FadeController>().fade = false;
+
+        Fade.GetComponent<FadeController>().t = 0.0f;
 
         if (LevelToLoad == -1)
         {
