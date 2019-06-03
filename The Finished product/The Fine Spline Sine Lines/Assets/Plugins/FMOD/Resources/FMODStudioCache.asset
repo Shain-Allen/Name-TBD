@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 114061101279014928}
   StringsBanks:
   - {fileID: 114574086514340840}
-  stringsBankWriteTime: 636949448133946253
+  stringsBankWriteTime: 636951211864137830
   cacheVersion: 3
 --- !u!114 &114002356862515774
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Sage_2\Documents\GitHub\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636949448133916255
+  lastModified: 636951211864087823
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Sage_2\Documents\GitHub\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636949448133946253
+  lastModified: 636951211864137830
   LoadResult: 0
   FileSizes:
   - Name: Desktop
