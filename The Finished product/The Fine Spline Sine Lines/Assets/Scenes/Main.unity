@@ -247,7 +247,7 @@ MonoBehaviour:
   - {fileID: 3278341007547291393, guid: f16f405a2083509488e6a93cb5795e57, type: 3}
   Level: {fileID: 0}
   currentLevel: 0
-  FinishNoise: event:/Music/Level Complete Music
+  FinishNoise: event:/Player/Rusty Gate
 --- !u!114 &1668391168
 MonoBehaviour:
   m_ObjectHideFlags: 0

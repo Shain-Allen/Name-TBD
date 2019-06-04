@@ -18,19 +18,20 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 114770994796661288}
   - {fileID: 114629096853101488}
-  - {fileID: 114686654535663262}
-  - {fileID: 114025947402028894}
   - {fileID: 114803310438166832}
-  - {fileID: 114965907200730944}
-  - {fileID: 114985878608861586}
-  - {fileID: 114267222033636908}
-  - {fileID: 114795117906075048}
+  - {fileID: 114282086390036674}
+  - {fileID: 114743012245490520}
+  - {fileID: 114680799920724718}
+  - {fileID: 114930615239469968}
+  - {fileID: 114301182231536308}
+  - {fileID: 114988171321977170}
+  - {fileID: 114816835139125688}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114873668663128332}
   StringsBanks:
   - {fileID: 114551946512488582}
-  stringsBankWriteTime: 636949117129686585
+  stringsBankWriteTime: 636952522021483266
   cacheVersion: 3
 --- !u!114 &114002356862515774
 MonoBehaviour:
@@ -371,6 +372,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2129
+--- !u!114 &114147078631405796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Menu Looping/IsInMainMenu
+  m_EditorClassIdentifier: 
+  Name: IsInMainMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114151578014958694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,6 +680,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114282086390036674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Rusty Gate
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Rusty Gate
+  guid: 21f191d216d88f4190ebbd1060c89f87
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
 --- !u!114 &114284559908731322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +726,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5100
+--- !u!114 &114301182231536308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/EnemyFootstepsSquish
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/EnemyFootstepsSquish
+  guid: 6d7915908bec1d4c905963b7204f6f6b
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 689
 --- !u!114 &114303196433972738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1537,11 +1601,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\sage.dupuy\Documents\GitHub\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636949117129686585
+  lastModified: 636952522021483266
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1212
+    Value: 1266
   Exists: 1
 --- !u!114 &114555571104434066
 MonoBehaviour:
@@ -1936,6 +2000,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2500
+--- !u!114 &114654132862441534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Crunchy Footstep random/IsMoving
+  m_EditorClassIdentifier: 
+  Name: IsMoving
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114668394937195330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,6 +2061,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 97000
+--- !u!114 &114680799920724718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player Death
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player Death
+  guid: 2c7efe473e6cc6409e95cfc2f8e7fad8
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2100
 --- !u!114 &114686654535663262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2132,6 +2236,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 78180
+--- !u!114 &114743012245490520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/Enemy Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Enemy Attack
+  guid: 2b59c2d808b7b543839abc4b28db7850
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
 --- !u!114 &114743419840520786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2456,6 +2583,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114816835139125688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Level Complete Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Level Complete Music
+  guid: e6f361eb9126644b9640aff03df76abc
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6857
 --- !u!114 &114830165793594374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2678,11 +2828,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\sage.dupuy\Documents\GitHub\Name-TBD\The Finished product\Fmod General\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636949117129676574
+  lastModified: 636952522021433221
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1945504
+    Value: 1955392
   Exists: 1
 --- !u!114 &114876377599388786
 MonoBehaviour:
@@ -2836,6 +2986,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114930615239469968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Background Ambient
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Background Ambient
+  guid: 6b925a87c2198a44afcacab5e933f13b
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 18461
 --- !u!114 &114933557299880680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2988,6 +3161,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 689
+--- !u!114 &114988171321977170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/Enemy Warning Noise
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Enemy Warning Noise
+  guid: bd30a48304c9bd4abb3dc35a5606fac1
+  Banks:
+  - {fileID: 114873668663128332}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
 --- !u!114 &114995509037585830
 MonoBehaviour:
   m_ObjectHideFlags: 0
